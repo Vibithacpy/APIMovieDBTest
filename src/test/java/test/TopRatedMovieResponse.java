@@ -26,15 +26,16 @@ public class TopRatedMovieResponse extends ReUsableMethods{
 		JsonPath js1=rawToJson(response);
 		
 		File f1 = new File("");
-		String FilePath = f1.getAbsolutePath().concat("\\src\\test\\java\\utility\\TestData.xlsx");
+		String FilePath = f1.getAbsolutePath().concat("//src//test//java//utility//TestData.xlsx");
 		XSSFWorkbook wb = new XSSFWorkbook(FilePath);
         XSSFSheet s1 = wb.getSheetAt(0);
         int totalNoOfRows  = s1.getLastRowNum();
 
-        String responseField,dataType;
-        for(int i = 2; i <=totalNoOfRows ; i++)
+        String responseField;
+        for(int i = 1; i <=totalNoOfRows ; i++)
         {
         	responseField=s1.getRow(i).getCell(0).toString();
+        	System.out.println(responseField);
         	
         	if(js1.get("results").toString().contains(responseField))
         	{

@@ -1,4 +1,0 @@
-# Created at 2022-07-06T17:56:55.539
-Boot Manifest-JAR contains absolute paths in classpath 'D:\Vibitha\workspace\Vibitha\APIMovieDBTest\target\test-classes'
-Hint: <argLine>-Djdk.net.URLClassPath.disableClassPathURLCheck=true</argLine>
-
