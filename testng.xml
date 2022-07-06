@@ -3,7 +3,7 @@
 <suite name="Suite">
   <test name="Test">
     <classes>
-      <class name="test.VerifyMoviesListedAfter2019"/>
+      
       <class name="test.VerifyStatuscode"/>
       <class name="test.TopRatedMovieResponse"/>
     </classes>
